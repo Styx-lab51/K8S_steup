@@ -1,4 +1,4 @@
-hostnamectl hostname node01
+hostnamectl hostname node02
 
 cat <<EOF | sudo tee /etc/NetworkManager/system-connections/enp1s0.nmconnection
 [connection]
