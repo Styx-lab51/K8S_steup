@@ -1,5 +1,6 @@
-#/etc/NetworkManager/system-connections/enp1s0.nmconnection
+hostnamectl hostname node01
 
+cat <<EOF | sudo tee /etc/NetworkManager/system-connections/enp1s0.nmconnection
 [connection]
 id=enp1s0
 uuid=09ff4a39-20f5-3017-9dba-6adff5ca8a5f
@@ -21,3 +22,4 @@ addr-gen-mode=eui64
 method=disabled
 
 [proxy]
+EOF
